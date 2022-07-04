@@ -32,3 +32,14 @@ CREATE TABLE Tipos (
 );
 
 --rollback DROP TABLE Tipos;
+
+--changeset case:4 
+CREATE TABLE Pedro (
+    PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255)
+);
+
+--rollback DROP TABLE Pedro;

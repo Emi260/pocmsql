@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset jenkins:1 labels:sample-label context:sample-context
---comment: se crea la tabla persones
+--comment: se crea la tabla persones se actualiza
 create table persones (
     id int primary key not null identity(1, 1),
     name varchar(50) not null,

@@ -10,6 +10,7 @@
 	http://www.liquibase.org/xml/ns/pro/liquibase-pro-4.0.xsd
 	http://www.liquibase.org/xml/ns/dbchangelog
 	http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.0.xsd">
-<include file="/00.CT/case1.dbo.sql"                                   relativeToChangelogFile="true"/>
-
+	<includeAll path="00.CT/" relativeToChangelogFile="true"  />
+	<includeAll path="DS/" relativeToChangelogFile="true"  />
+	<includeAll path="IX/" relativeToChangelogFile="true"  />
 </databaseChangeLog>

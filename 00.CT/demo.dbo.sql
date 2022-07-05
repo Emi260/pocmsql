@@ -1,15 +1,15 @@
---liquibase formatted sql changeLogId:140aa641-911b-4a2e-af0b-e8f3d809cc74
+--liquibase formatted sql
 
 --changeset jenkins:1 labels:sample-label context:sample-context
---comment: se crea la tabla personas
-create table personas (
+--comment: se crea la tabla persones
+create table persones (
     id int primary key not null identity(1, 1),
     name varchar(50) not null,
     address1 varchar(50),
     address2 varchar(50),
     city varchar(30)
 )
---rollback DROP TABLE person;
+--rollback DROP TABLE persones;
 
 --changeset jenkins:2 labels:sample-label context:sample-context
 --comment: se crea la tabla companias
@@ -20,7 +20,7 @@ create table companias (
     address2 varchar(50),
     city varchar(30)
 )
---rollback DROP TABLE company;
+--rollback DROP TABLE companias;
 
 --changeset jenkins:3 labels:sample-label context:sample-context
 --comment: se crea la tabla datos

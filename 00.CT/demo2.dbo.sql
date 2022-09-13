@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset bbva:2
-ALTER TABLE DIP.empleados
+ALTER TABLE empleados
 ADD Email varchar(255);
 
---rollback ALTER TABLE DIP.empleados DROP COLUMN Email;
+--rollback ALTER TABLE empleados DROP COLUMN Email;
